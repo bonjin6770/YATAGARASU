@@ -1,0 +1,48 @@
+C:\Users\kurosawa_shintarou\documents\visual studio 2015\Projects\YatagarasuSolution\YatagarasuWinFormApp\bin\Debug\YatagarasuWinFormApp.exe.config
+C:\Users\kurosawa_shintarou\documents\visual studio 2015\Projects\YatagarasuSolution\YatagarasuWinFormApp\bin\Debug\YatagarasuWinFormApp.exe
+C:\Users\kurosawa_shintarou\documents\visual studio 2015\Projects\YatagarasuSolution\YatagarasuWinFormApp\bin\Debug\YatagarasuWinFormApp.pdb
+C:\Users\kurosawa_shintarou\documents\visual studio 2015\Projects\YatagarasuSolution\YatagarasuWinFormApp\bin\Debug\YatagarasuLibrary.dll
+C:\Users\kurosawa_shintarou\documents\visual studio 2015\Projects\YatagarasuSolution\YatagarasuWinFormApp\bin\Debug\YatagarasuLibrary.pdb
+C:\Users\kurosawa_shintarou\documents\visual studio 2015\Projects\YatagarasuSolution\YatagarasuWinFormApp\obj\Debug\YatagarasuWinFormApp.csprojResolveAssemblyReference.cache
+C:\Users\kurosawa_shintarou\documents\visual studio 2015\Projects\YatagarasuSolution\YatagarasuWinFormApp\obj\Debug\YatagarasuWinFormApp.MainForm.resources
+C:\Users\kurosawa_shintarou\documents\visual studio 2015\Projects\YatagarasuSolution\YatagarasuWinFormApp\obj\Debug\YatagarasuWinFormApp.Properties.Resources.resources
+C:\Users\kurosawa_shintarou\documents\visual studio 2015\Projects\YatagarasuSolution\YatagarasuWinFormApp\obj\Debug\YatagarasuWinFormApp.csproj.GenerateResource.Cache
+C:\Users\kurosawa_shintarou\documents\visual studio 2015\Projects\YatagarasuSolution\YatagarasuWinFormApp\obj\Debug\YatagarasuWinFormApp.exe
+C:\Users\kurosawa_shintarou\documents\visual studio 2015\Projects\YatagarasuSolution\YatagarasuWinFormApp\obj\Debug\YatagarasuWinFormApp.pdb
+C:\Users\kurosawa_shintarou\documents\visual studio 2015\Projects\YatagarasuSolution\YatagarasuWinFormApp\obj\Debug\YatagarasuWinFormApp.AddTestCaseForm.resources
+C:\Users\kurosawa_shintarou\documents\visual studio 2015\Projects\YatagarasuSolution\YatagarasuWinFormApp\obj\Debug\YatagarasuWinFormApp.MakeTestProjectForm.resources
+C:\Users\kurosawa_shintarou\Dropbox\projects\YatagarasuSolution\YatagarasuWinFormApp\bin\Debug\YatagarasuWinFormApp.exe.config
+C:\Users\kurosawa_shintarou\Dropbox\projects\YatagarasuSolution\YatagarasuWinFormApp\obj\Debug\YatagarasuWinFormApp.exe
+C:\Users\kurosawa_shintarou\Dropbox\projects\YatagarasuSolution\YatagarasuWinFormApp\obj\Debug\YatagarasuWinFormApp.pdb
+C:\Users\kurosawa_shintarou\Dropbox\projects\YatagarasuSolution\YatagarasuWinFormApp\bin\Debug\YatagarasuWinFormApp.exe
+C:\Users\kurosawa_shintarou\Dropbox\projects\YatagarasuSolution\YatagarasuWinFormApp\bin\Debug\YatagarasuWinFormApp.pdb
+C:\Users\kurosawa_shintarou\Dropbox\projects\YatagarasuSolution\YatagarasuWinFormApp\bin\Debug\YatagarasuLibrary.dll
+C:\Users\kurosawa_shintarou\Dropbox\projects\YatagarasuSolution\YatagarasuWinFormApp\bin\Debug\YatagarasuLibrary.pdb
+C:\Users\kurosawa_shintarou\Dropbox\projects\YatagarasuSolution\YatagarasuWinFormApp\obj\Debug\YatagarasuWinFormApp.csprojResolveAssemblyReference.cache
+C:\Users\kurosawa_shintarou\Dropbox\projects\YatagarasuSolution\YatagarasuWinFormApp\obj\Debug\YatagarasuWinFormApp.AddTestCaseForm.resources
+C:\Users\kurosawa_shintarou\Dropbox\projects\YatagarasuSolution\YatagarasuWinFormApp\obj\Debug\YatagarasuWinFormApp.TestForm.resources
+C:\Users\kurosawa_shintarou\Dropbox\projects\YatagarasuSolution\YatagarasuWinFormApp\obj\Debug\YatagarasuWinFormApp.MakeTestProjectForm.resources
+C:\Users\kurosawa_shintarou\Dropbox\projects\YatagarasuSolution\YatagarasuWinFormApp\obj\Debug\YatagarasuWinFormApp.Properties.Resources.resources
+C:\Users\kurosawa_shintarou\Dropbox\projects\YatagarasuSolution\YatagarasuWinFormApp\obj\Debug\YatagarasuWinFormApp.csproj.GenerateResource.Cache
+C:\Users\kurosawa_shintarou\Dropbox\projects\YatagarasuSolution\YatagarasuWinFormApp\obj\Debug\YatagarasuWinFormApp.SelectProjectForm.resources
+C:\Users\Shintaro-Kurosawa\Dropbox\projects\YatagarasuSolution\YatagarasuWinFormApp\bin\Debug\YatagarasuWinFormApp.exe.config
+C:\Users\Shintaro-Kurosawa\Dropbox\projects\YatagarasuSolution\YatagarasuWinFormApp\obj\Debug\YatagarasuWinFormApp.exe
+C:\Users\Shintaro-Kurosawa\Dropbox\projects\YatagarasuSolution\YatagarasuWinFormApp\obj\Debug\YatagarasuWinFormApp.pdb
+C:\Users\Shintaro-Kurosawa\Dropbox\projects\YatagarasuSolution\YatagarasuWinFormApp\bin\Debug\YatagarasuWinFormApp.exe
+C:\Users\Shintaro-Kurosawa\Dropbox\projects\YatagarasuSolution\YatagarasuWinFormApp\bin\Debug\YatagarasuWinFormApp.pdb
+C:\Users\Shintaro-Kurosawa\Dropbox\projects\YatagarasuSolution\YatagarasuWinFormApp\bin\Debug\YatagarasuLibrary.dll
+C:\Users\Shintaro-Kurosawa\Dropbox\projects\YatagarasuSolution\YatagarasuWinFormApp\bin\Debug\YatagarasuLibrary.pdb
+C:\Users\Shintaro-Kurosawa\Dropbox\projects\YatagarasuSolution\YatagarasuWinFormApp\obj\Debug\YatagarasuWinFormApp.csprojResolveAssemblyReference.cache
+C:\Users\Shintaro-Kurosawa\Dropbox\projects\YatagarasuSolution\YatagarasuWinFormApp\obj\Debug\YatagarasuWinFormApp.AddTestCaseForm.resources
+C:\Users\Shintaro-Kurosawa\Dropbox\projects\YatagarasuSolution\YatagarasuWinFormApp\obj\Debug\YatagarasuWinFormApp.SelectProjectForm.resources
+C:\Users\Shintaro-Kurosawa\Dropbox\projects\YatagarasuSolution\YatagarasuWinFormApp\obj\Debug\YatagarasuWinFormApp.TestForm.resources
+C:\Users\Shintaro-Kurosawa\Dropbox\projects\YatagarasuSolution\YatagarasuWinFormApp\obj\Debug\YatagarasuWinFormApp.MakeTestProjectForm.resources
+C:\Users\Shintaro-Kurosawa\Dropbox\projects\YatagarasuSolution\YatagarasuWinFormApp\obj\Debug\YatagarasuWinFormApp.Properties.Resources.resources
+C:\Users\Shintaro-Kurosawa\Dropbox\projects\YatagarasuSolution\YatagarasuWinFormApp\obj\Debug\YatagarasuWinFormApp.csproj.GenerateResource.Cache
+C:\Users\kurosawa_shintarou\Dropbox\projects\YatagarasuSolution\YatagarasuWinFormApp\obj\Debug\YatagarasuWinFormApp.ShowTestCaseForm.resources
+C:\Users\kurosawa_shintarou\Dropbox\projects\YatagarasuSolution\YatagarasuWinFormApp\obj\Debug\YatagarasuWinFormApp.AddStepForm.resources
+C:\Users\kurosawa_shintarou\Dropbox\projects\YatagarasuSolution\YatagarasuWinFormApp\obj\Debug\YatagarasuWinFormApp.ShowStepForm.resources
+C:\Users\kurosawa_shintarou\Dropbox\projects\YatagarasuSolution\YatagarasuWinFormApp\obj\Debug\YatagarasuWinFormApp.EditStepDetailForm.resources
+C:\Users\kurosawa_shintarou\Documents\GitHub\Yatagarasu\source\YatagarasuSolution\YatagarasuWinFormApp\bin\Debug\YatagarasuWinFormApp.exe.config
+C:\Users\kurosawa_shintarou\Documents\GitHub\Yatagarasu\source\YatagarasuSolution\YatagarasuWinFormApp\obj\Debug\YatagarasuWinFormApp.exe
+C:\Users\kurosawa_shintarou\Documents\GitHub\Yatagarasu\source\YatagarasuSolution\YatagarasuWinFormApp\obj\Debug\YatagarasuWinFormApp.pdb

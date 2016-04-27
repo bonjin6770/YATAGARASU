@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TestStep xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Id>276bd516-3467-406a-adc1-96845e5123c6</Id>
+  <Title>TRY TESTING
+
+</Title>
+  <Detail>
+    <string>IT'S TRY TESTING!</string>
+    <string />
+    <string>BYE!</string>
+    <string />
+    <string>THX!</string>
+  </Detail>
+</TestStep>

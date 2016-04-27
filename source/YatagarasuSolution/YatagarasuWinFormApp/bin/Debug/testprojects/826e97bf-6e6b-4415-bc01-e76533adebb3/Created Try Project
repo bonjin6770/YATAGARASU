@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TestProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <List>
+    <TestCase>
+      <Title>CCCCC</Title>
+      <Details />
+      <Id>435af9b8-3b74-44bc-9a98-428b2e3e6a43</Id>
+      <List>
+        <TestStep>
+          <Id>5902b364-f994-469a-b274-1db26811bfbd</Id>
+          <Title>STEPPPPP</Title>
+          <Detail>
+            <string>YES</string>
+          </Detail>
+          <Created>2016-04-21T10:10:48.0886947+09:00</Created>
+        </TestStep>
+      </List>
+    </TestCase>
+  </List>
+  <Name>Created Try Project</Name>
+  <Id>826e97bf-6e6b-4415-bc01-e76533adebb3</Id>
+  <Created>2016-04-21T10:10:18.5069649+09:00</Created>
+</TestProject>

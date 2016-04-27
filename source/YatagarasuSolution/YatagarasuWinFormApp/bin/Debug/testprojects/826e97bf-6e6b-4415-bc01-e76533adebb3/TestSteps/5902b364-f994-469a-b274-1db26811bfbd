@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TestStep xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Id>5902b364-f994-469a-b274-1db26811bfbd</Id>
+  <Title>STEPPPPP</Title>
+  <Detail>
+    <string>YES</string>
+  </Detail>
+  <Created>2016-04-21T10:10:48.0886947+09:00</Created>
+</TestStep>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TestStep xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Id>d4a04cee-2302-4d5a-8d4a-a066690560fc</Id>
+  <Title>New Testing 2
+</Title>
+  <Detail>
+    <string>//************************************************</string>
+    <string>// クラス名           : TdmCFDAMNWAURE</string>
+    <string>//************************************************</string>
+    <string># 修正・追加メソッド一覧</string>
+    <string>sbtnC4Click</string>
+    <string>GetTmpPath</string>
+    <string>InitialTmpFolder</string>
+    <string>GetMonthlyReportPDFPath</string>
+    <string>GetDepotDestDirPath</string>
+    <string>GetDepotDestJKADTDATATzpPath</string>
+    <string>GetDepotDestJKADTDATAIniPath</string>
+    <string>GetJKADTDATATzpPath</string>
+    <string>GetJKADTDATATzpName</string>
+    <string>GetJKADTDATAIniPath</string>
+    <string>GetJKADTDATAIniName</string>
+    <string>UpdDBAfterTrans: Boolean</string>
+    <string>MakeSQLPrint</string>
+    <string>UpdF_C_PRENOTEAUDIT</string>
+    <string>DeleteAURESLIP</string>
+    <string>IsTransOK_PreNoteAudit</string>
+    <string>SetJourAfterPrintBtnEnabled</string>
+    <string />
+    <string># テスト対象メソッド一覧</string>
+    <string>sbtnC4Click</string>
+    <string>  MakeTransFile</string>
+    <string>    InitialTmpFolder</string>
+    <string>  UploadTransFile</string>
+    <string>  UpdDBAfterTrans</string>
+    <string />
+    <string># すべてのテストに共通するテスト事前準備</string>
+    <string>  1. オンラインデポの設定をテスト環境にする。(\\10.3.20.190\＠ｄａｉｃ\01_ＤＡＩＣ\13_開発書\その版数のみのもの\201606_LZH廃止、法人番号検索\オンラインデポ検証EXE\手順.txt)</string>
+    <string>  2. オンラインデポのテストツールを準備しておく。(\\10.3.20.190\＠ｄａｉｃ\01_ＤＡＩＣ\13_開発書\その版数のみのもの\201606_LZH廃止、法人番号検索\オンラインデポ検証EXE\OnlineDepoTestTool.exe)</string>
+    <string />
+    <string>//************************************************</string>
+    <string>// クラス名           : TdmCFDAMNWAURE</string>
+    <string>// テスト対象メソッド : InitialTmpFolder</string>
+    <string>//************************************************</string>
+    <string># テスト名           : TMPフォルダのごみファイルを削除して初期化</string>
+    <string># テスト事前準備     :</string>
+    <string>  1. [C:\Program Files (x86)\TKC\TFS_DA2\TMP]に、[hogehoge.txt]ファイルを作成しておく。</string>
+    <string>  2. [すべてのテストに共通するテスト事前準備]を実施しておく</string>
+    <string># テスト内容         :</string>
+    <string>  1. DAIC2を起動し、[213 月次チェック報告書] -&gt; [事務所へ送信]を実行する。</string>
+    <string>  2. 続けて以下を確認する。</string>
+    <string>■ [C:\Program Files (x86)\TKC\TFS_DA2\TMP\hogehoge.txt]が存在しない</string>
+    <string>■ [C:\Program Files (x86)\TKC\TFS_DA2\TMP\JKADTDATA.TZP]を解凍する。その中にhogehoge.txtが存在しない</string>
+    <string />
+    <string />
+    <string>//************************************************</string>
+    <string>// クラス名           : TdmCFDAMNWAURE</string>
+    <string>// テスト対象メソッド : UploadTransFile</string>
+    <string>//************************************************</string>
+    <string># テスト名           :オンラインデポへのファイル送信(正常系)</string>
+    <string># テスト事前準備     :</string>
+    <string>  1. [すべてのテストに共通するテスト事前準備]を実施しておく</string>
+    <string />
+    <string># テスト内容       :</string>
+    <string>  1. DAIC2を起動し、[213 月次チェック報告書] -&gt; [事務所へ送信]を実行する。</string>
+    <string>  2. 続けて以下を確認する。</string>
+    <string />
+    <string>■ JKADTDATA.INIファイルがオンラインデポ上にアップロードされている</string>
+    <string>   アップロードされているかどうかは、オンラインデポのテストツールを利用する。</string>
+    <string>   オンラインデポ上のパスは、「TFS_JKPRE\FX2P\09999999\JKDTDATA.INI」</string>
+    <string>■ JKADTDATA.TZPファイルがオンラインデポ上にアップロードされている</string>
+    <string>   アップロードされているかどうかは、オンラインデポのテストツールを利用する。</string>
+    <string>   オンラインデポ上のパスは、「TFS_JKPRE\FX2P\09999999\JKDTDATA.TZP」</string>
+    <string />
+    <string>//************************************************</string>
+    <string>// クラス名           : TfmCFDACOSAUDTISYS</string>
+    <string>//************************************************</string>
+    <string>//************************************************</string>
+    <string>// クラス名           : TfmCFDACOSAUDTISYS</string>
+    <string>// テスト対象メソッド : CompressJKADTDATATzp</string>
+    <string>//************************************************</string>
+    <string># テスト名           :圧縮処理(事務所への送信)の確認</string>
+    <string># テスト事前準備     :</string>
+    <string>  1. [すべてのテストに共通するテスト事前準備]を実施しておく</string>
+    <string># テスト内容         :</string>
+    <string>  1. DAIC2を起動し、[213 月次チェック報告書] -&gt; [事務所へ送信]を実行する。</string>
+    <string>  2. オンラインデポ上にアップロードされている[TFS_JKPRE\FX2P\09999999\JKDTDATA.TZP]ファイルをツールを使ってダウンロードする。</string>
+    <string>     [JKADTDATA.TZP]を解凍する。</string>
+    <string>     解凍したフォルダには以下が含まれる。</string>
+    <string />
+    <string>■ AMNTTTAL.TXT</string>
+    <string>■ AMNTTTL4.TXT</string>
+    <string>■ BDGTNAME.TXT</string>
+    <string>■ BDGTVRPL.TXT</string>
+    <string>■ CLNTMSTR.TXT</string>
+    <string>■ CPNYINFO.TXT</string>
+    <string>■ CSTMMSTR.TXT</string>
+    <string>■ EMPYDATA.TXT</string>
+    <string>■ EMPYMSTR.TXT</string>
+    <string>■ HEADINFO.TXT</string>
+    <string>■ HMKMSTR.TXT</string>
+    <string>■ HMKPAST.TXT</string>
+    <string>■ HMKSLIP.TXT</string>
+    <string>■ ITEMMSTR.TXT</string>
+    <string>■ JKSYSUSE.TXT</string>
+    <string>■ MOSINFO.TXT</string>
+    <string>■ OTLNMSTR.TXT</string>
+    <string>■ PSWDMSTR.TXT</string>
+    <string>■ SITMMSTR.TXT</string>
+    <string>■ SLIPNOW.TXT</string>
+    <string>■ SLIPPAJK.TXT</string>
+    <string>■ SUPLMSTR.TXT</string>
+    <string>■ TITLMSTR.TXT</string>
+    <string>■ VRPLMSTR.TXT</string>
+    <string>■ VRPLTTAL.TXT</string>
+    <string>■ WTAXTTAL.TXT</string>
+    <string>■ DBVER.INI</string>
+    <string>■ MonthlyReport.pdf</string>
+    <string />
+    <string>//************************************************</string>
+    <string>// クラス名           : </string>
+    <string>// テスト対象メソッド : </string>
+    <string>//************************************************</string>
+    <string># テスト名           :</string>
+    <string># テスト事前準備     :</string>
+    <string># テスト内容         :</string>
+    <string />
+    <string />
+    <string>//************************************************</string>
+    <string>// クラス名           : TdmCFDAMNWAURE</string>
+    <string>//************************************************</string>
+    <string>//************************************************</string>
+    <string>// クラス名           : </string>
+    <string>// テスト対象メソッド : </string>
+    <string>//************************************************</string>
+    <string># テスト名           :</string>
+    <string># テスト事前準備     :</string>
+    <string># テスト内容         :</string>
+    <string />
+    <string />
+    <string />
+    <string />
+  </Detail>
+</TestStep>

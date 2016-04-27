@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B442B31E-8AFB-436F-9464-0844106D6997}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>YatagarasuWinFormApp</RootNamespace>
+    <AssemblyName>YatagarasuWinFormApp</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddStepForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddStepForm.Designer.cs">
+      <DependentUpon>AddStepForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddTestCaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddTestCaseForm.Designer.cs">
+      <DependentUpon>AddTestCaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectProjectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectProjectForm.Designer.cs">
+      <DependentUpon>SelectProjectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditStepDetailForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditStepDetailForm.Designer.cs">
+      <DependentUpon>EditStepDetailForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowStepForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowStepForm.Designer.cs">
+      <DependentUpon>ShowStepForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowTestCaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowTestCaseForm.Designer.cs">
+      <DependentUpon>ShowTestCaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestForm.Designer.cs">
+      <DependentUpon>TestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MakeTestProjectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MakeTestProjectForm.Designer.cs">
+      <DependentUpon>MakeTestProjectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AddStepForm.resx">
+      <DependentUpon>AddStepForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddTestCaseForm.resx">
+      <DependentUpon>AddTestCaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectProjectForm.resx">
+      <DependentUpon>SelectProjectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditStepDetailForm.resx">
+      <DependentUpon>EditStepDetailForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowStepForm.resx">
+      <DependentUpon>ShowStepForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowTestCaseForm.resx">
+      <DependentUpon>ShowTestCaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestForm.resx">
+      <DependentUpon>TestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MakeTestProjectForm.resx">
+      <DependentUpon>MakeTestProjectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\YatagarasuLibrary\YatagarasuLibrary.csproj">
+      <Project>{e622325c-788f-43b9-8586-c83d22537a71}</Project>
+      <Name>YatagarasuLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

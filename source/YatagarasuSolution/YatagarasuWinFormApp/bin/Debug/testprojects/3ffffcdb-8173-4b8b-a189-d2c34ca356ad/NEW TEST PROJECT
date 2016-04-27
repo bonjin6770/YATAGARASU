@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TestProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <List>
+    <TestCase>
+      <Title>GOOD TESTING</Title>
+      <Details>IT'S GOOD!</Details>
+      <Id>8a531fb7-f4a3-4e15-9b8c-b55e705cadaa</Id>
+      <List>
+        <TestStep>
+          <Id>276bd516-3467-406a-adc1-96845e5123c6</Id>
+          <Title>TRY TESTING
+
+</Title>
+          <Detail>
+            <string>IT'S TRY TESTING!</string>
+            <string />
+            <string>BYE!</string>
+            <string />
+            <string>THX!</string>
+          </Detail>
+        </TestStep>
+      </List>
+    </TestCase>
+  </List>
+  <Name>NEW TEST PROJECT</Name>
+  <Id>3ffffcdb-8173-4b8b-a189-d2c34ca356ad</Id>
+</TestProject>
