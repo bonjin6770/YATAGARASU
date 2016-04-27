@@ -1,2 +1,2 @@
-# Yatagarasu
-This is Yatagarasu project.
+# YATAGARASU
+This is YATAGARASU project.
