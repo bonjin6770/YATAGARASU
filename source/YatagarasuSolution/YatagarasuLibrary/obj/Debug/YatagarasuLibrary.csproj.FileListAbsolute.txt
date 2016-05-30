@@ -13,3 +13,8 @@ C:\Users\Shintaro-Kurosawa\Dropbox\projects\YatagarasuSolution\YatagarasuLibrary
 C:\Users\Shintaro-Kurosawa\Dropbox\projects\YatagarasuSolution\YatagarasuLibrary\obj\Debug\YatagarasuLibrary.pdb
 C:\Users\Shintaro-Kurosawa\Dropbox\projects\YatagarasuSolution\YatagarasuLibrary\bin\Debug\YatagarasuLibrary.dll
 C:\Users\Shintaro-Kurosawa\Dropbox\projects\YatagarasuSolution\YatagarasuLibrary\bin\Debug\YatagarasuLibrary.pdb
+C:\Users\kurosawa_shintarou\Documents\GitHub\Yatagarasu\source\YatagarasuSolution\YatagarasuLibrary\bin\Debug\YatagarasuLibrary.dll
+C:\Users\kurosawa_shintarou\Documents\GitHub\Yatagarasu\source\YatagarasuSolution\YatagarasuLibrary\bin\Debug\YatagarasuLibrary.pdb
+C:\Users\kurosawa_shintarou\Documents\GitHub\Yatagarasu\source\YatagarasuSolution\YatagarasuLibrary\obj\Debug\YatagarasuLibrary.csprojResolveAssemblyReference.cache
+C:\Users\kurosawa_shintarou\Documents\GitHub\Yatagarasu\source\YatagarasuSolution\YatagarasuLibrary\obj\Debug\YatagarasuLibrary.dll
+C:\Users\kurosawa_shintarou\Documents\GitHub\Yatagarasu\source\YatagarasuSolution\YatagarasuLibrary\obj\Debug\YatagarasuLibrary.pdb

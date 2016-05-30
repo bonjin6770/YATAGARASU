@@ -23,10 +23,7 @@ namespace YatagarasuWinFormApp
 
         private void ShowStepForm_Shown(object sender, EventArgs e)
         {
-            var project = Registory.TestProjectRepogitory.SelectByName(TestProjectName);
-            //testCaseListBox.Items.AddRange(projectList.SelectMany(D => D.List).Select(d => d.Title).ToArray());
-            var a = project.List.Where(d => d.Title == TestCaseName).SelectMany(D => D.List).Select(d => d.Title).ToArray();
-            stepsListBox.Items.AddRange(a);
+            ShowSteps();
         }
 
         private void stepsListBox_DoubleClick(object sender, EventArgs e)
@@ -39,6 +36,7 @@ namespace YatagarasuWinFormApp
                 fm.TestStep = TestStep;
                 fm.ShowDialog();
             }
+            ShowSteps();
         }
 
         private void SelectStep()
@@ -47,6 +45,15 @@ namespace YatagarasuWinFormApp
             {
                 TestStep = stepsListBox.SelectedItem.ToString();
             }
+        }
+
+        private void ShowSteps()
+        {
+            stepsListBox.Items.Clear();
+            var project = Registory.TestProjectRepogitory.SelectByName(TestProjectName);
+            //testCaseListBox.Items.AddRange(projectList.SelectMany(D => D.List).Select(d => d.Title).ToArray());
+            var a = project.List.Where(d => d.Title == TestCaseName).SelectMany(D => D.List).Select(d => d.Title).ToArray();
+            stepsListBox.Items.AddRange(a);
         }
     }
 }

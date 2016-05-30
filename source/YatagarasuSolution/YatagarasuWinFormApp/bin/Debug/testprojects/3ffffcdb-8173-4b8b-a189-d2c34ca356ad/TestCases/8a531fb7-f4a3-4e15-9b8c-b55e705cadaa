@@ -16,6 +16,8 @@
         <string />
         <string>THX!</string>
       </Detail>
+      <Created>0001-01-01T00:00:00</Created>
     </TestStep>
   </List>
+  <Created>0001-01-01T00:00:00</Created>
 </TestCase>

@@ -12,6 +12,7 @@ namespace YatagarasuLibrary
         public string Details { get; set; }
         public Guid Id { get; set; }
         public List<TestStep> List { get; set; }
+        public DateTime Created { get; set; }
 
         public void AddStep(string title, List<string> detail)
         {

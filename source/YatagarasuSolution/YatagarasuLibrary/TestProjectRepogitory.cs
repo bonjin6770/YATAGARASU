@@ -15,7 +15,7 @@ namespace YatagarasuLibrary
         /// <param name="project"></param>
         public void Add(TestProject project)
         {
-            
+
             Save(project);
         }
 
@@ -157,10 +157,15 @@ namespace YatagarasuLibrary
             System.IO.StreamReader sr = new System.IO.StreamReader(
                 projectFileName, new System.Text.UTF8Encoding(false));
 
+            TestProject obj;
+
             //XMLファイルから読み込み、逆シリアル化する
-            TestProject obj = (TestProject)serializer.Deserialize(sr);
-            //ファイルを閉じる
-            sr.Close();
+            using (sr)
+            {
+                obj = (TestProject)serializer.Deserialize(sr);
+                //ファイルを閉じる
+                sr.Close();
+            }
 
             return obj;
         }

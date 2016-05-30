@@ -30,25 +30,18 @@ namespace YatagarasuWinFormApp
             _step = _project.List.Where(d => d.Title == TestCaseName).First().List.Where(d => d.Title == TestStep).First();
             titleTextBox.Text = _step.Title;
             detailTextBox.Lines = _step.Detail.ToArray();
+            createdDateTimePicker.Value = _step.Created;
         }
 
         private void updateButton_Click(object sender, EventArgs e)
         {
 
-            _step.Title = LineToString(titleTextBox.Lines);
+            _step.Title = titleTextBox.Text;
             _step.Detail = detailTextBox.Lines.ToList();
+            _step.Created = createdDateTimePicker.Value;
+
             Registory.TestProjectRepogitory.Save(_project);
             Close();
-        }
-        private string LineToString(string[] line)
-        {
-            string str = String.Empty;
-            foreach (var each in line)
-            {
-                str += String.Format(@"{0}{1}", each, System.Environment.NewLine);
-            }
-
-            return str;
         }
     }
 }
