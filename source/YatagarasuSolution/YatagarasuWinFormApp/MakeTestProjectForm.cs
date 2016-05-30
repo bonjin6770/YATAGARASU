@@ -20,7 +20,7 @@ namespace YatagarasuWinFormApp
 
         private void makeButton_Click(object sender, EventArgs e)
         {
-            var project = Registory.TestProjectFactory.Create(projectNameTextBox.Text);
+            var project = Registory.TestProjectFactory.CreateNew(projectNameTextBox.Text);
             Registory.TestProjectRepogitory.Add(project);
             Close();
         }

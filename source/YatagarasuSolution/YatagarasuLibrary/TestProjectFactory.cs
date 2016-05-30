@@ -8,7 +8,7 @@ namespace YatagarasuLibrary
 {
     public class TestProjectFactory
     {
-        public TestProject Create(string name)
+        public TestProject CreateNew(string name)
         {
             return new TestProject
             {
