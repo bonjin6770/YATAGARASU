@@ -21,6 +21,24 @@ namespace YatagarasuLibrary
             List.Add(newStep);
         }
 
+        public bool HasTestStep(Guid id)
+        {
+            foreach (var s in List)
+            {
+                if (s.Id == id) { return true; }
+            }
+            return false;
+        }
+
+        public TestStep SelectTestStep(Guid id)
+        {
+            foreach (var s in List)
+            {
+                if (s.Id == id) { return s; }
+            }
+            throw new IndexOutOfRangeException("テストケースが見つかりません。");
+        }
+
         public override string ToString()
         {
             return this.Title;

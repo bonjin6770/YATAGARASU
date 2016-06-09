@@ -47,6 +47,7 @@
             this.testCaseComboBox = new System.Windows.Forms.ComboBox();
             this.testStepComboBox = new System.Windows.Forms.ComboBox();
             this.testStepTextBox = new System.Windows.Forms.TextBox();
+            this.treeView1 = new System.Windows.Forms.TreeView();
             this.statusStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -134,7 +135,7 @@
             this.toolStripProgressBar1});
             this.statusStrip1.Location = new System.Drawing.Point(0, 686);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(695, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(958, 22);
             this.statusStrip1.TabIndex = 8;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -156,7 +157,7 @@
             this.ヘルプToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(695, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(958, 24);
             this.menuStrip1.TabIndex = 9;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -184,44 +185,56 @@
             // 
             // testProjectComboBox
             // 
+            this.testProjectComboBox.Enabled = false;
             this.testProjectComboBox.FormattingEnabled = true;
-            this.testProjectComboBox.Location = new System.Drawing.Point(113, 174);
+            this.testProjectComboBox.Location = new System.Drawing.Point(628, 39);
             this.testProjectComboBox.Name = "testProjectComboBox";
-            this.testProjectComboBox.Size = new System.Drawing.Size(570, 20);
+            this.testProjectComboBox.Size = new System.Drawing.Size(305, 20);
             this.testProjectComboBox.TabIndex = 10;
             this.testProjectComboBox.SelectedIndexChanged += new System.EventHandler(this.testProjectComboBox_SelectedIndexChanged);
             // 
             // testCaseComboBox
             // 
+            this.testCaseComboBox.Enabled = false;
             this.testCaseComboBox.FormattingEnabled = true;
-            this.testCaseComboBox.Location = new System.Drawing.Point(114, 200);
+            this.testCaseComboBox.Location = new System.Drawing.Point(628, 65);
             this.testCaseComboBox.Name = "testCaseComboBox";
-            this.testCaseComboBox.Size = new System.Drawing.Size(569, 20);
+            this.testCaseComboBox.Size = new System.Drawing.Size(305, 20);
             this.testCaseComboBox.TabIndex = 11;
             this.testCaseComboBox.SelectedIndexChanged += new System.EventHandler(this.testCaseComboBox_SelectedIndexChanged);
             // 
             // testStepComboBox
             // 
+            this.testStepComboBox.Enabled = false;
             this.testStepComboBox.FormattingEnabled = true;
-            this.testStepComboBox.Location = new System.Drawing.Point(114, 227);
+            this.testStepComboBox.Location = new System.Drawing.Point(628, 91);
             this.testStepComboBox.Name = "testStepComboBox";
-            this.testStepComboBox.Size = new System.Drawing.Size(569, 20);
+            this.testStepComboBox.Size = new System.Drawing.Size(305, 20);
             this.testStepComboBox.TabIndex = 12;
             this.testStepComboBox.SelectedIndexChanged += new System.EventHandler(this.testStepComboBox_SelectedIndexChanged);
             // 
             // testStepTextBox
             // 
-            this.testStepTextBox.Location = new System.Drawing.Point(12, 263);
+            this.testStepTextBox.Location = new System.Drawing.Point(326, 177);
             this.testStepTextBox.Multiline = true;
             this.testStepTextBox.Name = "testStepTextBox";
-            this.testStepTextBox.Size = new System.Drawing.Size(671, 420);
+            this.testStepTextBox.Size = new System.Drawing.Size(620, 506);
             this.testStepTextBox.TabIndex = 13;
+            // 
+            // treeView1
+            // 
+            this.treeView1.Location = new System.Drawing.Point(0, 177);
+            this.treeView1.Name = "treeView1";
+            this.treeView1.Size = new System.Drawing.Size(320, 506);
+            this.treeView1.TabIndex = 14;
+            this.treeView1.NodeMouseDoubleClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.treeView1_NodeMouseClick);
             // 
             // TestForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(695, 708);
+            this.ClientSize = new System.Drawing.Size(958, 708);
+            this.Controls.Add(this.treeView1);
             this.Controls.Add(this.testStepTextBox);
             this.Controls.Add(this.testStepComboBox);
             this.Controls.Add(this.testCaseComboBox);
@@ -270,6 +283,7 @@
         private System.Windows.Forms.ComboBox testCaseComboBox;
         private System.Windows.Forms.ComboBox testStepComboBox;
         private System.Windows.Forms.TextBox testStepTextBox;
+        private System.Windows.Forms.TreeView treeView1;
     }
 }
 

@@ -13,8 +13,8 @@ namespace YatagarasuWinFormApp
 {
     public partial class TestForm : Form
     {
+        private List<TestProject> _projectList = new List<TestProject>();
 
-        private List<YatagarasuLibrary.TestProject> _projectList = new List<YatagarasuLibrary.TestProject>();
         public TestForm()
         {
             InitializeComponent();
@@ -149,9 +149,53 @@ namespace YatagarasuWinFormApp
             foreach (var p in _projectList)
             {
                 testProjectComboBox.Items.Add(p);
-            }
 
+            }
             testProjectComboBox.SelectedIndex = 0;
+
+            treeView1.Nodes.AddRange(ProjectToTreeNode().ToArray());
+
+
+        }
+
+        private List<TreeNode> ProjectToTreeNode()
+        {
+            var root = new List<TreeNode>();
+            foreach (var p in _projectList)
+            {
+                var ptn = new TreeNode();
+                ptn.Name = p.Id.ToString();
+                ptn.Text = p.Name;
+                foreach (var c in p.List)
+                {
+                    var ctn = new TreeNode();
+
+                    var contextmenustrip = new ContextMenuStrip();
+                    var i = new ToolStripMenuItem();
+                    i.Text = "add test step";
+                    i.Click += changeDirectionButton_Click;
+                    contextmenustrip.Items.Add(i);
+                    ctn.ContextMenuStrip = contextmenustrip;
+
+                    ctn.Name = c.Id.ToString();
+                    ctn.Text = c.Title;
+                    foreach (var s in c.List)
+                    {
+                        var stn = new TreeNode();
+                        stn.Name = s.Id.ToString();
+                        stn.Text = s.Title;
+                        ctn.Nodes.Add(stn);
+                    }
+                    ptn.Nodes.Add(ctn);
+                }
+                root.Add(ptn);
+            }
+            return root;
+        }
+
+        private void I_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         private void testProjectComboBox_SelectedIndexChanged(object sender, EventArgs e)
@@ -183,6 +227,30 @@ namespace YatagarasuWinFormApp
             if (testStepComboBox.SelectedItem == null) { return; }
             var teststep = testStepComboBox.SelectedItem as TestStep;
             testStepTextBox.Lines = teststep.Detail.ToArray();
+        }
+
+        private void treeView1_NodeMouseClick(object sender, TreeNodeMouseClickEventArgs e)
+        {
+            if (treeView1.SelectedNode == null) { return; }
+            if (string.IsNullOrWhiteSpace(treeView1.SelectedNode.Name)) { return; }
+            var id = new Guid(treeView1.SelectedNode.Name);
+
+            foreach (var p in _projectList)
+            {
+                if (!p.HasTestStep(id)) { continue; }
+                testStepTextBox.Lines = p.SelectTestStep(id).Detail.ToArray();
+                return;
+            }
+
+        }
+
+        private void changeDirectionButton_Click(object sender, EventArgs e)
+        {
+            if (treeView1.SelectedNode == null) { return; }
+            if (string.IsNullOrWhiteSpace(treeView1.SelectedNode.Name)) { return; }
+            ToolStripItem item = (ToolStripItem)sender;
+            MessageBox.Show(treeView1.SelectedNode.Name);
+
         }
     }
 }
