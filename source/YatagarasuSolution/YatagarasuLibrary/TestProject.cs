@@ -20,5 +20,10 @@ namespace YatagarasuLibrary
             a.List = new List<TestStep>();
             List.Add(a);
         }
+
+        public override string ToString()
+        {
+            return this.Name;
+        }
     }
 }

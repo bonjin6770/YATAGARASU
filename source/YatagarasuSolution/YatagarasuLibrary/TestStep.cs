@@ -12,5 +12,10 @@ namespace YatagarasuLibrary
         public string Title { get; set; }
         public List<string> Detail { get; set; }
         public DateTime Created { get; set; }
+
+        public override string ToString()
+        {
+            return this.Title;
+        }
     }
 }

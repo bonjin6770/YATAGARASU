@@ -7,11 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using YatagarasuLibrary;
 
 namespace YatagarasuWinFormApp
 {
     public partial class TestForm : Form
     {
+
+        private List<YatagarasuLibrary.TestProject> _projectList = new List<YatagarasuLibrary.TestProject>();
         public TestForm()
         {
             InitializeComponent();
@@ -138,6 +141,48 @@ namespace YatagarasuWinFormApp
         private void toolStripStatusLabel1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void TestForm_Shown(object sender, EventArgs e)
+        {
+            _projectList = YatagarasuLibrary.Registory.TestProjectRepogitory.SelectAll();
+            foreach (var p in _projectList)
+            {
+                testProjectComboBox.Items.Add(p);
+            }
+
+            testProjectComboBox.SelectedIndex = 0;
+        }
+
+        private void testProjectComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (testProjectComboBox.SelectedItem == null) { return; }
+            var selectedProject = testProjectComboBox.SelectedItem as YatagarasuLibrary.TestProject;
+            foreach (var c in selectedProject.List)
+            {
+                testCaseComboBox.Items.Add(c);
+            }
+        }
+
+        private void testCaseComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (testProjectComboBox.SelectedItem == null) { return; }
+            if (testCaseComboBox.SelectedItem == null) { return; }
+            var testcase = testCaseComboBox.SelectedItem as TestCase;
+            foreach (var c in testcase.List)
+            {
+                testStepComboBox.Items.Add(c);
+            }
+
+        }
+
+        private void testStepComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (testProjectComboBox.SelectedItem == null) { return; }
+            if (testCaseComboBox.SelectedItem == null) { return; }
+            if (testStepComboBox.SelectedItem == null) { return; }
+            var teststep = testStepComboBox.SelectedItem as TestStep;
+            testStepTextBox.Lines = teststep.Detail.ToArray();
         }
     }
 }

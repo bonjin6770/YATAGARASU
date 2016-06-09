@@ -43,6 +43,10 @@
             this.ファイルToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.環境設定ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ヘルプToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.testProjectComboBox = new System.Windows.Forms.ComboBox();
+            this.testCaseComboBox = new System.Windows.Forms.ComboBox();
+            this.testStepComboBox = new System.Windows.Forms.ComboBox();
+            this.testStepTextBox = new System.Windows.Forms.TextBox();
             this.statusStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -128,9 +132,9 @@
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1,
             this.toolStripProgressBar1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 316);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 686);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(604, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(695, 22);
             this.statusStrip1.TabIndex = 8;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -152,7 +156,7 @@
             this.ヘルプToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(604, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(695, 24);
             this.menuStrip1.TabIndex = 9;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -178,11 +182,50 @@
             this.ヘルプToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
             this.ヘルプToolStripMenuItem.Text = "ヘルプ(&H)";
             // 
+            // testProjectComboBox
+            // 
+            this.testProjectComboBox.FormattingEnabled = true;
+            this.testProjectComboBox.Location = new System.Drawing.Point(113, 174);
+            this.testProjectComboBox.Name = "testProjectComboBox";
+            this.testProjectComboBox.Size = new System.Drawing.Size(570, 20);
+            this.testProjectComboBox.TabIndex = 10;
+            this.testProjectComboBox.SelectedIndexChanged += new System.EventHandler(this.testProjectComboBox_SelectedIndexChanged);
+            // 
+            // testCaseComboBox
+            // 
+            this.testCaseComboBox.FormattingEnabled = true;
+            this.testCaseComboBox.Location = new System.Drawing.Point(114, 200);
+            this.testCaseComboBox.Name = "testCaseComboBox";
+            this.testCaseComboBox.Size = new System.Drawing.Size(569, 20);
+            this.testCaseComboBox.TabIndex = 11;
+            this.testCaseComboBox.SelectedIndexChanged += new System.EventHandler(this.testCaseComboBox_SelectedIndexChanged);
+            // 
+            // testStepComboBox
+            // 
+            this.testStepComboBox.FormattingEnabled = true;
+            this.testStepComboBox.Location = new System.Drawing.Point(114, 227);
+            this.testStepComboBox.Name = "testStepComboBox";
+            this.testStepComboBox.Size = new System.Drawing.Size(569, 20);
+            this.testStepComboBox.TabIndex = 12;
+            this.testStepComboBox.SelectedIndexChanged += new System.EventHandler(this.testStepComboBox_SelectedIndexChanged);
+            // 
+            // testStepTextBox
+            // 
+            this.testStepTextBox.Location = new System.Drawing.Point(12, 263);
+            this.testStepTextBox.Multiline = true;
+            this.testStepTextBox.Name = "testStepTextBox";
+            this.testStepTextBox.Size = new System.Drawing.Size(671, 420);
+            this.testStepTextBox.TabIndex = 13;
+            // 
             // TestForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(604, 338);
+            this.ClientSize = new System.Drawing.Size(695, 708);
+            this.Controls.Add(this.testStepTextBox);
+            this.Controls.Add(this.testStepComboBox);
+            this.Controls.Add(this.testCaseComboBox);
+            this.Controls.Add(this.testProjectComboBox);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.showStepButton);
@@ -196,6 +239,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "TestForm";
             this.Text = "八咫烏";
+            this.Shown += new System.EventHandler(this.TestForm_Shown);
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
@@ -222,6 +266,10 @@
         private System.Windows.Forms.ToolStripMenuItem ヘルプToolStripMenuItem;
         private System.Windows.Forms.ToolStripProgressBar toolStripProgressBar1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+        private System.Windows.Forms.ComboBox testProjectComboBox;
+        private System.Windows.Forms.ComboBox testCaseComboBox;
+        private System.Windows.Forms.ComboBox testStepComboBox;
+        private System.Windows.Forms.TextBox testStepTextBox;
     }
 }
 

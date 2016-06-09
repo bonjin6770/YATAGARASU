@@ -20,5 +20,10 @@ namespace YatagarasuLibrary
             var newStep = new TestStep { Id = guid, Title = title, Detail = detail, Created = DateTime.Now };
             List.Add(newStep);
         }
+
+        public override string ToString()
+        {
+            return this.Title;
+        }
     }
 }
