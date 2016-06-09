@@ -145,6 +145,13 @@ namespace YatagarasuWinFormApp
 
         private void TestForm_Shown(object sender, EventArgs e)
         {
+            LoadTestProjects();
+        }
+
+        private void LoadTestProjects()
+        {
+            treeView1.Nodes.Clear();
+
             _projectList = YatagarasuLibrary.Registory.TestProjectRepogitory.SelectAll();
             foreach (var p in _projectList)
             {
@@ -154,8 +161,6 @@ namespace YatagarasuWinFormApp
             testProjectComboBox.SelectedIndex = 0;
 
             treeView1.Nodes.AddRange(ProjectToTreeNode().ToArray());
-
-
         }
 
         private List<TreeNode> ProjectToTreeNode()
@@ -249,8 +254,26 @@ namespace YatagarasuWinFormApp
             if (treeView1.SelectedNode == null) { return; }
             if (string.IsNullOrWhiteSpace(treeView1.SelectedNode.Name)) { return; }
             ToolStripItem item = (ToolStripItem)sender;
-            MessageBox.Show(treeView1.SelectedNode.Name);
 
+            var id = new Guid(treeView1.SelectedNode.Name);
+
+            var selectedProjectName = "";
+            var selectedCaseName = "";
+            foreach (var p in _projectList)
+            {
+                if (!p.HasTestCase(id)) { continue; }
+                selectedProjectName = p.Name;
+                selectedCaseName = p.SelectTestCase(id).Title;
+                break;
+            }
+
+            using (var fm = new AddStepForm())
+            {
+                fm.TestProjectName = selectedProjectName;
+                fm.TestCaseName = selectedCaseName;
+                fm.ShowDialog();
+            }
+            LoadTestProjects();
         }
     }
 }

@@ -13,6 +13,7 @@
         <string />
         <string>target Testing</string>
       </Detail>
+      <Created>0001-01-01T00:00:00</Created>
     </TestStep>
     <TestStep>
       <Id>d4a04cee-2302-4d5a-8d4a-a066690560fc</Id>
@@ -155,6 +156,40 @@
         <string />
         <string />
       </Detail>
+      <Created>0001-01-01T00:00:00</Created>
+    </TestStep>
+    <TestStep>
+      <Id>cd18c774-74a6-40af-8edc-4f1d2bc20259</Id>
+      <Title>eadwf</Title>
+      <Detail>
+        <string>asdf</string>
+      </Detail>
+      <Created>2016-06-09T14:49:48.2911281+09:00</Created>
+    </TestStep>
+    <TestStep>
+      <Id>d36390ed-d006-4574-ae0d-fd84a766c099</Id>
+      <Title>sdfasd</Title>
+      <Detail>
+        <string>asdfasdfa</string>
+      </Detail>
+      <Created>2016-06-09T14:49:54.4618787+09:00</Created>
+    </TestStep>
+    <TestStep>
+      <Id>21967924-0bbd-4a62-a484-13033825ce49</Id>
+      <Title>aasdfa</Title>
+      <Detail>
+        <string>asdfasdf</string>
+      </Detail>
+      <Created>2016-06-09T14:50:40.7235161+09:00</Created>
+    </TestStep>
+    <TestStep>
+      <Id>ad375b53-343f-4f51-98ba-efbb47a9e049</Id>
+      <Title>asdf</Title>
+      <Detail>
+        <string>sdfasdfasd</string>
+      </Detail>
+      <Created>2016-06-09T14:51:10.5959162+09:00</Created>
     </TestStep>
   </List>
+  <Created>0001-01-01T00:00:00</Created>
 </TestCase>

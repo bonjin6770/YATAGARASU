@@ -21,6 +21,24 @@ namespace YatagarasuLibrary
             List.Add(a);
         }
 
+        public bool HasTestCase(Guid id)
+        {
+            foreach (var c in List)
+            {
+                if (c.Id == id) { return true; }
+            }
+            return false;
+        }
+
+        public TestCase SelectTestCase(Guid id)
+        {
+            foreach (var c in List)
+            {
+                if (c.Id == id) { return c; }
+            }
+            throw new IndexOutOfRangeException("テストケースが見つかりません");
+        }
+
         public bool HasTestStep(Guid id)
         {
             foreach (var c in List)
@@ -39,7 +57,7 @@ namespace YatagarasuLibrary
 
                 return c.SelectTestStep(id);
             }
-            throw new IndexOutOfRangeException("テストケースが見つかりません");
+            throw new IndexOutOfRangeException("テストステップが見つかりません");
         }
 
         public override string ToString()
