@@ -48,6 +48,7 @@
             this.testStepComboBox = new System.Windows.Forms.ComboBox();
             this.testStepTextBox = new System.Windows.Forms.TextBox();
             this.treeView1 = new System.Windows.Forms.TreeView();
+            this.saveButton = new System.Windows.Forms.Button();
             this.statusStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -218,22 +219,33 @@
             this.testStepTextBox.Location = new System.Drawing.Point(326, 177);
             this.testStepTextBox.Multiline = true;
             this.testStepTextBox.Name = "testStepTextBox";
-            this.testStepTextBox.Size = new System.Drawing.Size(620, 506);
+            this.testStepTextBox.Size = new System.Drawing.Size(620, 471);
             this.testStepTextBox.TabIndex = 13;
             // 
             // treeView1
             // 
             this.treeView1.Location = new System.Drawing.Point(0, 177);
             this.treeView1.Name = "treeView1";
-            this.treeView1.Size = new System.Drawing.Size(320, 506);
+            this.treeView1.Size = new System.Drawing.Size(320, 471);
             this.treeView1.TabIndex = 14;
             this.treeView1.NodeMouseDoubleClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.treeView1_NodeMouseClick);
+            // 
+            // saveButton
+            // 
+            this.saveButton.Location = new System.Drawing.Point(858, 654);
+            this.saveButton.Name = "saveButton";
+            this.saveButton.Size = new System.Drawing.Size(75, 23);
+            this.saveButton.TabIndex = 15;
+            this.saveButton.Text = "save";
+            this.saveButton.UseVisualStyleBackColor = true;
+            this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
             // 
             // TestForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(958, 708);
+            this.Controls.Add(this.saveButton);
             this.Controls.Add(this.treeView1);
             this.Controls.Add(this.testStepTextBox);
             this.Controls.Add(this.testStepComboBox);
@@ -284,6 +296,7 @@
         private System.Windows.Forms.ComboBox testStepComboBox;
         private System.Windows.Forms.TextBox testStepTextBox;
         private System.Windows.Forms.TreeView treeView1;
+        private System.Windows.Forms.Button saveButton;
     }
 }
 

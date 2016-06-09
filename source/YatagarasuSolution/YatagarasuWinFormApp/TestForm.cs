@@ -146,10 +146,29 @@ namespace YatagarasuWinFormApp
         private void TestForm_Shown(object sender, EventArgs e)
         {
             LoadTestProjects();
+
+            // 初期選択
+            if (treeView1.Nodes.Count == 0)
+            {
+                return;
+            }
+            treeView1.SelectedNode = treeView1.Nodes[0];
+            treeView1.Select();
+
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         private void LoadTestProjects()
         {
+            var contextmenustrip = new ContextMenuStrip();
+            var addNewProjectItem = new ToolStripMenuItem();
+            addNewProjectItem.Text = "add project step";
+            addNewProjectItem.Click += AddNewProjectEvent;
+            contextmenustrip.Items.Add(addNewProjectItem);
+            treeView1.ContextMenuStrip = contextmenustrip;
+
             treeView1.Nodes.Clear();
 
             _projectList = YatagarasuLibrary.Registory.TestProjectRepogitory.SelectAll();
@@ -161,6 +180,60 @@ namespace YatagarasuWinFormApp
             testProjectComboBox.SelectedIndex = 0;
 
             treeView1.Nodes.AddRange(ProjectToTreeNode().ToArray());
+
+        }
+
+        private void AddProject(TreeNode n)
+        {
+            treeView1.Nodes.Add(n);
+        }
+
+        private void AddCase(TreeNode n, TreeNode testProject)
+        {
+
+        }
+
+        private void AddStep(TreeNode n)
+        {
+
+        }
+
+        private TreeNode ProjectToTreeNode(TestProject p)
+        {
+            var ptn = new TreeNode();
+            var contextmenustripToP = new ContextMenuStrip();
+            var addNewCaseItem = new ToolStripMenuItem();
+            addNewCaseItem.Text = "add new case";
+            addNewCaseItem.Click += AddNewCaseEvent;
+            contextmenustripToP.Items.Add(addNewCaseItem);
+            ptn.ContextMenuStrip = contextmenustripToP;
+
+            ptn.Name = p.Id.ToString();
+            ptn.Text = p.Name;
+            return ptn;
+        }
+
+        private TreeNode CaseToTreeNode(TestCase c)
+        {
+            var ctn = new TreeNode();
+            var contextmenustrip = new ContextMenuStrip();
+            var addNewStepItem = new ToolStripMenuItem();
+            addNewStepItem.Text = "add new step";
+            addNewStepItem.Click += AddNewStepEvent;
+            contextmenustrip.Items.Add(addNewStepItem);
+            ctn.ContextMenuStrip = contextmenustrip;
+
+            ctn.Name = c.Id.ToString();
+            ctn.Text = c.Title;
+            return ctn;
+        }
+
+        private TreeNode StepToTreeNode(TestStep s)
+        {
+            var stn = new TreeNode();
+            stn.Name = s.Id.ToString();
+            stn.Text = s.Title;
+            return stn;
         }
 
         private List<TreeNode> ProjectToTreeNode()
@@ -168,27 +241,13 @@ namespace YatagarasuWinFormApp
             var root = new List<TreeNode>();
             foreach (var p in _projectList)
             {
-                var ptn = new TreeNode();
-                ptn.Name = p.Id.ToString();
-                ptn.Text = p.Name;
+                var ptn = ProjectToTreeNode(p);
                 foreach (var c in p.List)
                 {
-                    var ctn = new TreeNode();
-
-                    var contextmenustrip = new ContextMenuStrip();
-                    var i = new ToolStripMenuItem();
-                    i.Text = "add test step";
-                    i.Click += changeDirectionButton_Click;
-                    contextmenustrip.Items.Add(i);
-                    ctn.ContextMenuStrip = contextmenustrip;
-
-                    ctn.Name = c.Id.ToString();
-                    ctn.Text = c.Title;
+                    var ctn = CaseToTreeNode(c);
                     foreach (var s in c.List)
                     {
-                        var stn = new TreeNode();
-                        stn.Name = s.Id.ToString();
-                        stn.Text = s.Title;
+                        var stn = StepToTreeNode(s);
                         ctn.Nodes.Add(stn);
                     }
                     ptn.Nodes.Add(ctn);
@@ -196,11 +255,6 @@ namespace YatagarasuWinFormApp
                 root.Add(ptn);
             }
             return root;
-        }
-
-        private void I_Click(object sender, EventArgs e)
-        {
-            throw new NotImplementedException();
         }
 
         private void testProjectComboBox_SelectedIndexChanged(object sender, EventArgs e)
@@ -249,23 +303,96 @@ namespace YatagarasuWinFormApp
 
         }
 
-        private void changeDirectionButton_Click(object sender, EventArgs e)
+
+
+        private TestProject GetSelectedProject()
         {
-            if (treeView1.SelectedNode == null) { return; }
-            if (string.IsNullOrWhiteSpace(treeView1.SelectedNode.Name)) { return; }
-            ToolStripItem item = (ToolStripItem)sender;
+            var id = GetSelectedId();
 
-            var id = new Guid(treeView1.SelectedNode.Name);
+            foreach (var p in _projectList)
+            {
+                if (!(p.Id == id)) { continue; }
+                return p;
+            }
 
-            var selectedProjectName = "";
-            var selectedCaseName = "";
             foreach (var p in _projectList)
             {
                 if (!p.HasTestCase(id)) { continue; }
-                selectedProjectName = p.Name;
-                selectedCaseName = p.SelectTestCase(id).Title;
-                break;
+                return p;
             }
+
+            throw new IndexOutOfRangeException();
+        }
+
+        private TreeNode GetSelectedProjectNode()
+        {
+            var selectedProject = GetSelectedProject();
+            foreach (TreeNode n in treeView1.Nodes)
+            {
+
+                if (n.Name == selectedProject.Id.ToString()) { return n; }
+            }
+
+            throw new IndexOutOfRangeException();
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        private Guid GetSelectedId()
+        {
+            if (treeView1.SelectedNode == null) { throw new IndexOutOfRangeException(); }
+            if (string.IsNullOrWhiteSpace(treeView1.SelectedNode.Name)) { throw new IndexOutOfRangeException(); }
+
+            return new Guid(treeView1.SelectedNode.Name);
+        }
+
+        private string GetSelectedCaseName()
+        {
+            var id = GetSelectedId();
+
+            foreach (var p in _projectList)
+            {
+                if (!p.HasTestCase(id)) { continue; }
+                return p.SelectTestCase(id).Title;
+            }
+
+            throw new IndexOutOfRangeException();
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void AddNewProjectEvent(object sender, EventArgs e)
+        {
+            using (var fm = new MakeTestProjectForm())
+            {
+                fm.ShowDialog();
+                AddProject(ProjectToTreeNode(fm.NewProject));
+            }
+        }
+
+        private void AddNewCaseEvent(object sender, EventArgs e)
+        {
+            var selectedProject = GetSelectedProjectNode();
+            using (var fm = new AddTestCaseForm())
+            {
+                fm.TestProjectName = selectedProject.Text;
+                fm.ShowDialog();
+                AddCase(CaseToTreeNode(fm.NewTestCase), selectedProject);
+            }
+
+            LoadTestProjects();
+
+        }
+
+        private void AddNewStepEvent(object sender, EventArgs e)
+        {
+            var selectedProjectName = GetSelectedProject().Name;
+            var selectedCaseName = GetSelectedCaseName();
 
             using (var fm = new AddStepForm())
             {
@@ -274,6 +401,11 @@ namespace YatagarasuWinFormApp
                 fm.ShowDialog();
             }
             LoadTestProjects();
+        }
+
+        private void saveButton_Click(object sender, EventArgs e)
+        {
+            // save
         }
     }
 }

@@ -13,6 +13,8 @@ namespace YatagarasuWinFormApp
 {
     public partial class MakeTestProjectForm : Form
     {
+        public TestProject NewProject { get; private set; }
+
         public MakeTestProjectForm()
         {
             InitializeComponent();
@@ -20,8 +22,8 @@ namespace YatagarasuWinFormApp
 
         private void makeButton_Click(object sender, EventArgs e)
         {
-            var project = Registory.TestProjectFactory.CreateNew(projectNameTextBox.Text);
-            Registory.TestProjectRepogitory.Add(project);
+            NewProject = Registory.TestProjectFactory.CreateNew(projectNameTextBox.Text);
+            Registory.TestProjectRepogitory.Add(NewProject);
             Close();
         }
     }

@@ -20,6 +20,22 @@
           </Detail>
           <Created>0001-01-01T00:00:00</Created>
         </TestStep>
+        <TestStep>
+          <Id>96455281-c792-40aa-bb54-e93b1323242e</Id>
+          <Title>test</Title>
+          <Detail>
+            <string>test</string>
+          </Detail>
+          <Created>2016-06-10T06:58:29.2195509+09:00</Created>
+        </TestStep>
+        <TestStep>
+          <Id>ee9dda26-f91c-4e76-8c8f-24fb47e9a310</Id>
+          <Title>te</Title>
+          <Detail>
+            <string>a</string>
+          </Detail>
+          <Created>2016-06-10T07:43:29.9584904+09:00</Created>
+        </TestStep>
       </List>
       <Created>0001-01-01T00:00:00</Created>
     </TestCase>

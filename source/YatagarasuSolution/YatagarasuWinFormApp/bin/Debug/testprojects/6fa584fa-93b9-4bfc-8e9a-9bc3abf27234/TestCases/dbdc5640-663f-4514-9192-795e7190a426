@@ -190,6 +190,14 @@
       </Detail>
       <Created>2016-06-09T14:51:10.5959162+09:00</Created>
     </TestStep>
+    <TestStep>
+      <Id>dba8ed1b-0340-446c-a45c-a51817b4b80a</Id>
+      <Title>test</Title>
+      <Detail>
+        <string>asdf</string>
+      </Detail>
+      <Created>2016-06-10T07:46:32.8725229+09:00</Created>
+    </TestStep>
   </List>
   <Created>0001-01-01T00:00:00</Created>
 </TestCase>

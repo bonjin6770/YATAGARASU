@@ -13,12 +13,13 @@ namespace YatagarasuLibrary
         public Guid Id { get; set; }
         public DateTime Created { get; set; }
 
-        public void AddTestCase(string title, string details)
+        public TestCase AddTestCase(string title, string details)
         {
             var id = Guid.NewGuid();
             var a = new TestCase { Id = id, Title = title, Details = details };
             a.List = new List<TestStep>();
             List.Add(a);
+            return a;
         }
 
         public bool HasTestCase(Guid id)

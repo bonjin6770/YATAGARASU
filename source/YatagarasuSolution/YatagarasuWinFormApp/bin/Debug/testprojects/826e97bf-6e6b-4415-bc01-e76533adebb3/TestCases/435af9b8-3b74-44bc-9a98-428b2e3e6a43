@@ -12,5 +12,14 @@
       </Detail>
       <Created>2016-04-21T10:10:48.0886947+09:00</Created>
     </TestStep>
+    <TestStep>
+      <Id>d55abc0b-69a3-497a-a8b1-c83d23e1e2db</Id>
+      <Title>test</Title>
+      <Detail>
+        <string>test</string>
+      </Detail>
+      <Created>2016-06-10T07:36:29.9738042+09:00</Created>
+    </TestStep>
   </List>
+  <Created>0001-01-01T00:00:00</Created>
 </TestCase>

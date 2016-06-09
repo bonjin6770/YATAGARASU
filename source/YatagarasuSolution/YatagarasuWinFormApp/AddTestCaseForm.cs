@@ -15,6 +15,8 @@ namespace YatagarasuWinFormApp
     {
         public string TestProjectName { get; set; }
 
+        public TestCase NewTestCase { get; private set; }
+
         public AddTestCaseForm()
         {
             InitializeComponent();
@@ -23,7 +25,7 @@ namespace YatagarasuWinFormApp
         private void addButton_Click(object sender, EventArgs e)
         {
             var project = Registory.TestProjectRepogitory.SelectByName(TestProjectName);
-            project.AddTestCase(titleTextBox.Text, detailTextBox.Text);
+            NewTestCase = project.AddTestCase(titleTextBox.Text, detailTextBox.Text);
             Registory.TestProjectRepogitory.Save(project);
             Close();
         }

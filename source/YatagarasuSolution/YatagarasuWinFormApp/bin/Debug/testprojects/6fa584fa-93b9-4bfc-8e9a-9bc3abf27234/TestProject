@@ -192,6 +192,14 @@
           </Detail>
           <Created>2016-06-09T14:51:10.5959162+09:00</Created>
         </TestStep>
+        <TestStep>
+          <Id>dba8ed1b-0340-446c-a45c-a51817b4b80a</Id>
+          <Title>test</Title>
+          <Detail>
+            <string>asdf</string>
+          </Detail>
+          <Created>2016-06-10T07:46:32.8725229+09:00</Created>
+        </TestStep>
       </List>
       <Created>0001-01-01T00:00:00</Created>
     </TestCase>
@@ -207,6 +215,27 @@ asdf
 
 </Details>
       <Id>3cf7aabb-cd98-4181-9138-f11c39423e90</Id>
+      <List />
+      <Created>0001-01-01T00:00:00</Created>
+    </TestCase>
+    <TestCase>
+      <Title>ad</Title>
+      <Details>asdf</Details>
+      <Id>c2897be5-eb1a-4a0c-9292-9e25e20aee2d</Id>
+      <List />
+      <Created>0001-01-01T00:00:00</Created>
+    </TestCase>
+    <TestCase>
+      <Title>asdfads</Title>
+      <Details>asdfasdf</Details>
+      <Id>c4b69a5e-77f2-4b2d-9f2b-a15d67417715</Id>
+      <List />
+      <Created>0001-01-01T00:00:00</Created>
+    </TestCase>
+    <TestCase>
+      <Title>case</Title>
+      <Details>case</Details>
+      <Id>7f58a78f-e5f6-4114-b224-3a50f93cbf80</Id>
       <List />
       <Created>0001-01-01T00:00:00</Created>
     </TestCase>
