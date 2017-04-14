@@ -1,11 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YatagarasuLibrary", "YatagarasuLibrary\YatagarasuLibrary.csproj", "{E622325C-788F-43B9-8586-C83D22537A71}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YatagarasuWinFormApp", "YatagarasuWinFormApp\YatagarasuWinFormApp.csproj", "{B442B31E-8AFB-436F-9464-0844106D6997}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yatagarasu", "Yatagarasu\Yatagarasu.csproj", "{C6C3864B-2F00-45BA-9C27-ADE964DE68EF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E622325C-788F-43B9-8586-C83D22537A71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E622325C-788F-43B9-8586-C83D22537A71}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E622325C-788F-43B9-8586-C83D22537A71}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E622325C-788F-43B9-8586-C83D22537A71}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B442B31E-8AFB-436F-9464-0844106D6997}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B442B31E-8AFB-436F-9464-0844106D6997}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B442B31E-8AFB-436F-9464-0844106D6997}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B442B31E-8AFB-436F-9464-0844106D6997}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6C3864B-2F00-45BA-9C27-ADE964DE68EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6C3864B-2F00-45BA-9C27-ADE964DE68EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6C3864B-2F00-45BA-9C27-ADE964DE68EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6C3864B-2F00-45BA-9C27-ADE964DE68EF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

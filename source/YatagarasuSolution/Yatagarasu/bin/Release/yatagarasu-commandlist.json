@@ -1,0 +1,30 @@
+{"UserCommands":[
+    
+    {"Name":"TKCMenu","Command":"C:\/Users\/kurosawa_shintarou\/Documents\/script\/startTkcMenu.bat"},
+    {"Name":"@DAIC","Command":"\\\\10.3.20.190\\＠ｄａｉｃ"},
+    {"Name":"share","Command":"D:\/share\/"},
+    {"Name":"MSDN","Command":"\\\\10.3.23.211\\msdn"},
+    {"Name":"TFS_DA2","Command":"C:\/Program Files (x86)\/TKC\/TFS_DA2"},
+    {"Name":"profit","Command":"C:\/Program Files (x86)\/TKC\/PROFIT\/PrftMenu.exe"},
+    {"Name":"TkcSupportData","Command":"\\\\10.3.20.190\\InData_DAICGr\\05_問い合わせ関連"},
+    {"Name":"GenponServer","Command":"\\\\10.3.22.6"},
+    {"Name":"ISOServer","Command":"\\\\10.3.20.211"},
+    {"Name":"apps","Command":"D:\\apps"},
+    {"Name":"SVChange","Command":"D:\\apps\\SVChange.exe"},
+    {"Name":"WinMerge","Command":"C:\/Program Files (x86)\/WinMerge\/WinMergeU.exe"},
+    {"Name":"Daic3CloudEnvSettingsTool(PublicToolFolder)","Command":"\\\\10.3.20.190\\＠ｄａｉｃ\\41_開発ツール\\Tool-tkc\\(DAIC3ｸﾗｳﾄﾞ)01_開発業務_テスト環境に接続する一式"},
+    {"Name":"C:BAKDT","Command":"C:\\Program Files (x86)\\TKC\\BAKDT"},
+    {"Name":"TKCUserDT","Command":"\\\\sv-sdc1f\\TKCUserDT"},
+    {"Name":"Everything","Command":"C:\/Program Files\/Everything\/Everything.exe"},
+    {"Name":"NHMail","Command":"\\\\SV-HelpDesk\\NH\\NHMail\\NHMailCL.exe","WorkingDirectory":"\\\\SV-HelpDesk\\NH\\NHMail\\"},
+    {"Name":"txt","Command":"D:/doc/database/txt"},
+    {"Name":"SearchIt","Command":"D:/apps/SearchIt/SeachIt/SearchIt.exe"},
+    {"Name":"bat","Command":"C:/Users/kurosawa_shintarou/Dropbox/bat/"},
+    {"Name":"testing","Command":"D:/doc/database/testing-daic"},
+    {"Name":"WORKSPACE","Command":"C:/Users/kurosawa_shintarou/workspace/"},
+
+    {"Name":"quit","Command":""},
+    {"Name":"Config.Reload","Command":""},
+    {"Name":"Config.Edit","Command":"D:/apps/Yatagarasu/yatagarasu-commandlist.json"}
+  
+]}
